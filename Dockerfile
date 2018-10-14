@@ -18,7 +18,7 @@ CMD [“/usr/sbin/init”]
 RUN yum -y install ansible
 
 # Copy baked in playbooks
-COPY ansible /ansible
+COPY . /ansible
 
 # Add volume for Ansible playbooks
 VOLUME /ansible
